@@ -1,0 +1,10 @@
+
+
+.filter-options {
+
+}
+
+#restaurants-list {
+  grid-template-columns: 1fr 1fr;
+
+}
