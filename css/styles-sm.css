@@ -5,8 +5,6 @@ grid-template-columns:1fr 1fr 1fr;
 height: 50px;
 }
 
-
-
 #restaurants-list {
   grid-template-columns: 1fr 1fr;
 }

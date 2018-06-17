@@ -149,7 +149,7 @@ nav h1 a {
 
 .filter-options {
   display: grid;
-  grid-template-columns:1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
   width: 100%;
   height: 125px;
@@ -182,7 +182,7 @@ nav h1 a {
 
 #restaurants-list {
   display: grid;
-  grid-template-columns:1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
   background-color: #f3f3f3;
   list-style: outside none none;
@@ -208,7 +208,7 @@ nav h1 a {
   margin: 0;
   max-width: 100%;
   min-height: 248px;
-  min-width: 100%;
+  width: 100%;
 }
 
 #restaurants-list li h1 {
