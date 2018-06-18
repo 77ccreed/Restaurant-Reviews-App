@@ -3,23 +3,23 @@
  */
 class DBHelper {
 
-/**
- * Database URL.
- */
-static get DATABASE_URL() {
-  let pathname = window.location.pathname;
-  pathname = pathname.substring(0, pathname.lastIndexOf("/"));
-  return `${window.location.protocol}//${window.location.host}${pathname}/data/restaurants.json`;
-}
+  /**
+   * Database URL.
+   */
+  static get DATABASE_URL() {
+    let pathname = window.location.pathname;
+    pathname = pathname.substring(0, pathname.lastIndexOf("/"));
+    return `${window.location.protocol}//${window.location.host}${pathname}/data/restaurants.json`;
+  }
 
-/**
- * Images URL.
- */
-static get IMAGES_URL() {
-  let pathname = window.location.pathname;
-  pathname = pathname.substring(0, pathname.lastIndexOf("/"));
-  return `${window.location.protocol}//${window.location.host}${pathname}/img`;
-}
+  /**
+   * Images URL.
+   */
+  static get IMAGES_URL() {
+    let pathname = window.location.pathname;
+    pathname = pathname.substring(0, pathname.lastIndexOf("/"));
+    return `${window.location.protocol}//${window.location.host}${pathname}/img`;
+  }
 
   /**
    * Fetch all restaurants.
@@ -100,7 +100,7 @@ static get IMAGES_URL() {
       if (error) {
         callback(error, null);
       } else {
-        let results = restaurants
+        let results = restaurants;
         if (cuisine != 'all') { // filter by cuisine
           results = results.filter(r => r.cuisine_type == cuisine);
         }
@@ -159,7 +159,14 @@ static get IMAGES_URL() {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`/img/${restaurant.photograph}`);
+    return (`${DBHelper.IMAGES_URL}/${restaurant.photograph}`);
+  }
+
+  /**
+   * Restaurant image description.
+   */
+  static imageDescriptionForRestaurant(restaurant) {
+    return (`${restaurant.photographDescription}`);
   }
 
   /**
@@ -171,9 +178,8 @@ static get IMAGES_URL() {
       title: restaurant.name,
       url: DBHelper.urlForRestaurant(restaurant),
       map: map,
-      animation: google.maps.Animation.DROP}
-    );
+      animation: google.maps.Animation.DROP
+    });
     return marker;
   }
-
 }
