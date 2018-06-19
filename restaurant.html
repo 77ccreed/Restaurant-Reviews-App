@@ -6,22 +6,26 @@
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <!-- Main CSS file -->
   <link rel="stylesheet" href="css/styles.css" type="text/css">
-<link href="css/styles-sm.css" media="(min-width: 768px)" rel="stylesheet">
-<link href="css/styles-md.css" media="(min-width: 992px)" rel="stylesheet">
-<link href="css/styles-lg.css" media="(min-width: 1200px)" rel="stylesheet">
+  <link href="css/styles-sm.css" media="(min-width: 768px)" rel="stylesheet">
+  <link href="css/styles-md.css" media="(min-width: 992px)" rel="stylesheet">
+  <link href="css/styles-lg.css" media="(min-width: 1200px)" rel="stylesheet">
   <title>Restaurant Info</title>
 </head>
 
 <body class="inside">
   <!-- Beginning header -->
-  <header>
+  <header aria-label="Beginning header">
     <!-- Beginning nav -->
-    <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+    <nav aria-label="Navigation">
+      <h1 aria-label="Restaurant Reviews">
+        <a role="link" href="/">Restaurant Reviews</a>
+      </h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
-      <li><a href="/">Home</a></li>
+    <ul id="breadcrumb" aria-label="Breadcrumb">
+      <li>
+        <a role="link" href="/">Home</a>
+      </li>
     </ul>
     <!-- End breadcrumb -->
     <!-- End nav -->
@@ -29,24 +33,24 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent">
+  <main aria-label="Page main content" id="maincontent">
     <!-- Beginning map -->
-    <section id="map-container">
-      <div id="map"></div>
+    <section aria-label="Map container" id="map-container">
+      <div title="Google Maps" role="application" id="map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+    <section aria-label="Restaurant Container" id="restaurant-container">
+      <h1 aria-label="Restaurant name" id="restaurant-name"></h1>
+      <img aria-label="Restaurant image" id="restaurant-img">
+      <p aria-label="Restaurant cuisine" id="restaurant-cuisine"></p>
+      <p aria-label="Restaurant address" id="restaurant-address"></p>
+      <table aria-label="Restaurant opening hours" id="restaurant-hours"></table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section id="reviews-container">
-      <ul id="reviews-list"></ul>
+    <section aria-label="Reviews container" id="reviews-container">
+      <ul aria-label="Reviews list" id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
   </main>
@@ -54,7 +58,10 @@
 
   <!-- Beginning footer -->
   <footer id="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2017
+    <a href="/">
+      <strong>Restaurant Reviews</strong>
+    </a> All Rights Reserved.
   </footer>
   <!-- End footer -->
 
@@ -64,7 +71,7 @@
   <!-- Main javascript file -->
   <script type="text/javascript" src="js/restaurant_info.js"></script>
   <!-- Google Maps -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZN60kGcOhlZBl2XRduZIlpnjf--X63Bg&libraries=places&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZN60kGcOhlZBl2XRduZIlpnjf--X63Bg&libraries=places&callback=initMap"></script>
   <!-- End scripts -->
 
 </body>
