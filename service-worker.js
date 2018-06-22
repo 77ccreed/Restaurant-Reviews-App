@@ -1,7 +1,7 @@
 /* =============================================================== */
 /* EXAMPLE FROM: https://developers.google.com/web/fundamentals/codelabs/offline/ */
 /* =============================================================== */
-/*
+
 const CACHE_NAME = 'my-site-cache-v3';
 const urlsToCache = [
   '/Restaurant-Reviews-App/',
@@ -44,8 +44,8 @@ self.addEventListener('fetch', (event) => {
       return response || fetch(event.request);
     })
   );
-});*/
-
+});
+/*
 self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open('Restaurant-Reviews-App').then(function (cache) {
