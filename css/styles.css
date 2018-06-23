@@ -68,6 +68,7 @@ section {
   display: grid;
   grid-template-columns:1fr;
   grid-template-rows: 400px 1fr;
+  justify-content: center;
   background-color: #f3f3f3;
   min-height: 100%;
   width: 100%;
@@ -213,6 +214,7 @@ nav h1 a {
   margin: 0;
   min-height: 248px;
   max-width: 100%;
+
 }
 
 #restaurants-list li h1 {
