@@ -6,8 +6,5 @@ height: 50px;
 }
 
 #restaurants-list {
-  grid-template-columns: 1fr 1fr;
-  /* max-width: 800px;
-   margin-left: auto;
-   margin-right: auto;*/
+ grid-template-columns: 1fr 1fr; 
 }
