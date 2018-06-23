@@ -1,3 +1,9 @@
+.inside #maincontent {
+ 
+  grid-template-rows: 0px 1fr 1fr;
+ 
+}
+
 #restaurants-list {
   max-width: 1100px;
   margin-left: auto;

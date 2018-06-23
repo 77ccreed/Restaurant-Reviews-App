@@ -67,7 +67,7 @@ section {
 #maincontent {
   display: grid;
   grid-template-columns:1fr;
-  grid-template-rows: 400px 1fr 1fr;
+  grid-template-rows: 400px 1fr;
   background-color: #f3f3f3;
   min-height: 100%;
   width: 100%;
@@ -110,7 +110,7 @@ nav h1 a {
   padding: 10px 40px 16px;
   list-style: none;
   background-color: rgba(252, 216, 98, 0.849);
-  font-size: 17px;
+  font-size: 1.2rem;
   margin: 0;
 }
 
