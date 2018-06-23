@@ -1,7 +1,5 @@
 .inside #maincontent {
- 
   grid-template-rows: 0px 1fr 1fr;
- 
 }
 
 #restaurants-list {
@@ -46,4 +44,3 @@
 #reviews-container {
   padding: 30px 40px 80px;
 }
-

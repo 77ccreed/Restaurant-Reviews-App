@@ -317,7 +317,8 @@ nav h1 a {
 #reviews-container {
   grid-column: 1 / -1;
   grid-row: 3 / 4;
-  padding: 30px 40px 80px;
+  padding: 10px;
+  margin-bottom: 60px;
 }
 
 #reviews-container h2 {
