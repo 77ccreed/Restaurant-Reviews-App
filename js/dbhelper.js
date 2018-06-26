@@ -163,6 +163,13 @@ class DBHelper {
   }
 
   /**
+   * Restaurant image URL.
+   */
+  static webp_photo_imageUrlForRestaurant(restaurant) {
+    return (`${DBHelper.IMAGES_URL}/${restaurant.webp_photo}`);
+  }
+
+  /**
    * Restaurant image description.
    */
   static imageDescriptionForRestaurant(restaurant) {
