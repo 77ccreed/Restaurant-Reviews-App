@@ -159,14 +159,14 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`https://github.com/77ccreed/Restaurant-Reviews-App/img/${restaurant.photograph}`);
+    return (`./img/${restaurant.photograph}`);
   }
 
   /**
    * Restaurant image URL.
    */
   static webp_photo_imageUrlForRestaurant(restaurant) {
-    return (`https://github.com/77ccreed/Restaurant-Reviews-App/img/${restaurant.webp_photo}`);
+    return (`./img/${restaurant.webp_photo}`);
   }
 
   /**
