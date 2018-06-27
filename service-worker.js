@@ -16,6 +16,13 @@ const urlsToCache = [
   '/Restaurant-Reviews-App/restaurant.html?id=8',
   '/Restaurant-Reviews-App/restaurant.html?id=9',
   '/Restaurant-Reviews-App/restaurant.html?id=10',
+  '/Restaurant-Reviews-App/css/styles.css',
+  '/Restaurant-Reviews-App/css/styles-sm.css',
+  '/Restaurant-Reviews-App/css/styles-md.css',
+  '/Restaurant-Reviews-App/data/restaurants.json',
+  '/Restaurant-Reviews-App/js/main.js',
+  '/Restaurant-Reviews-App/js/dbhelper.js',
+  '/Restaurant-Reviews-App/js/restaurant_info.js',
 ];
 
 self.addEventListener('install', (event) => {
